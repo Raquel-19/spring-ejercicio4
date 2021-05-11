@@ -25,14 +25,13 @@ public class User {
     @Column (name = "country")
     private String country;
 
-    @Column (name =  "salary")
+    @Column (name = "salary")
     private Double salary;
 
     public User () {
     }
 
-    public User(Long id, String name, String lastName, Integer age, Boolean married, String country, Double salary) {
-        this.id = id;
+    public User(String name, String lastName, Integer age, Boolean married, String country, Double salary) {
         this.name = name;
         this.lastName = lastName;
         this.age = age;
